@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Интерьерная печать в Ельце — панно, фотообои, холст, УФ-печать — ВИКОМ</title>
+<meta name="description" content="Интерьерная печать в Ельце от ВИКОМ: настенные панно, фотообои, картины на холсте, плёнка на стекло и УФ-печать по ПВХ, композиту и оргстеклу. Цены от 600 ₽/м², калькулятор, помощь с макетом.">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="theme-color" content="#2B2B2B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="services">
+
+<!-- ==================== HEADER (шапка прокручивается вместе со страницей) ==================== -->
+<header class="site-header">
+  <div class="header-topbar">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo-badge">
+          <span class="logo-title">
+            <span class="logo-title-main">ВиКом</span>
+            <span class="logo-title-sub">рекламное агентство</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="header-search">
+        <form id="headerSearchForm" role="search">
+          <input type="search" id="headerSearch" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+          <button type="submit" aria-label="Искать">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </form>
+        <div class="search-suggest" id="searchSuggest"></div>
+      </div>
+
+      <div class="header-actions">
+        <a href="tel:+79205129999" class="header-phone">+7 920 512-99-99</a>
+        <a href="#contact-form" class="btn btn-primary header-cta">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<nav class="dropdown-nav" id="dropdownNav">
+    <div class="nav-search">
+        <form id="navSearchForm" role="search">
+            <input type="search" id="navSearchInput" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+            <button type="submit" aria-label="Искать">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+            </button>
+        </form>
+        <div class="search-suggest" id="navSearchSuggest"></div>
+    </div>
+    <a href="index.html" data-page="index">Главная</a>
+  <div class="nav-services" id="navServices">
+    <button type="button" class="nav-services-toggle" id="navServicesToggle" aria-expanded="false"><span>Услуги</span><svg class="nav-services-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+    <div class="nav-services-submenu">
+      <a href="signage.html" data-sub="signage">Вывески</a>
+      <a href="bigprint.html" data-sub="bigprint">Широкоформатная печать</a>
+      <a href="horeca.html" data-sub="horeca">Интерьерная печать</a>
+      <a href="outdoor.html" data-sub="outdoor">Наружная реклама</a>
+      <a href="gifts.html" data-sub="gifts">Сувениры и мерч в Ельце</a>
+      <a href="interior.html" data-sub="interior">Интерьер и декор</a>
+      <a href="repair.html" data-sub="repair">Ремонт рекламы</a>
+      <a href="design.html" data-sub="design">Дизайн</a>
+      <a href="digital.html" data-sub="digital">Создание и SEO-оптимизация сайтов</a>
+    </div>
+  </div>
+    <a href="blog.html" data-page="blog">Блог</a>
+    <a href="portfolio.html" data-page="portfolio">Портфолио</a>
+    <a href="prices.html" data-page="prices">Цены</a>
+    <a href="production.html" data-page="production">Производство</a>
+    <a href="about.html" data-page="about">О нас</a>
+    <div class="nav-bottom">
+
+        <a href="#contact-form" class="nav-feedback">Обратная связь</a>
+
+        <div class="nav-contacts">
+            <a href="tel:+79205129999">+7 920 512-99-99</a><span class="nav-contacts-sep" aria-hidden="true">·</span><a href="mailto:info@vikom.ru">info@vikom.ru</a>
+        </div>
+        <div class="nav-address">г. Елец, ул. Коммунаров, 70Б</div>
+    </div>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ==================== TICKER ==================== -->
+<div class="ticker-strip">
+  <div class="ticker-track">
+    <span>Наружная реклама</span><span>Вывески</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Интерьерная печать</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Создание и SEO-оптимизация сайтов</span>
+    <span>Наружная реклама</span><span>Вывески</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Интерьерная печать</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Создание и SEO-оптимизация сайтов</span>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="page-hero sg-hero">
+  <div class="container sg-hero-grid">
+    <div class="sg-hero-copy">
+      <p class="service-breadcrumb"><a href="index.html">Главная</a> / <a href="services.html">Услуги</a> / Интерьерная печать</p>
+      <span class="eyebrow">Интерьерная печать</span>
+      <h1>Интерьерная печать в Ельце</h1>
+      <p class="sg-lead">Печатаем настенные панно, фотообои, картины на холсте, плёнку на стекло и графику на жёстких материалах — для кафе, баров, офисов, магазинов и жилых помещений.</p>
+      <p class="muted">Подберём материал и способ нанесения под освещение и тип поверхности.</p>
+      <p class="sg-chip">г. Елец, ул. Коммунаров, 70Б</p>
+      <div class="service-detail-actions">
+        <a href="#calc" class="btn btn-primary">Рассчитать печать</a>
+        <a href="#prices" class="btn btn-outline">Смотреть цены</a>
+      </div>
+      <ul class="sg-bullets">
+        <li>Точная цветопередача</li><li>УФ-печать по жёстким материалам</li><li>Печать на своём материале</li><li>Помощь с макетом</li>
+      </ul>
+    </div>
+    <div class="sg-hero-photo">
+      <img src="assets/photos/hc-hero.jpg" alt="Неоновая вывеска и графика на стене бара" loading="lazy">
+      <span class="sg-photo-tag">Панно · Стеновая графика</span>
+    </div>
+  </div>
+</section>
+
+<section class="bp-stats-wrap">
+  <div class="container">
+    <ul class="bp-stats">
+      <li><b>от 600 ₽/м²</b><span>УФ-печать на материале заказчика</span></li>
+      <li><b>до 3,2 м</b><span>ширина печати</span></li>
+      <li><b>от 1 700 ₽/м²</b><span>картины на холсте</span></li>
+      <li><b>от 500 ₽</b><span>минимальный заказ на нашем материале</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<section class="section">
+  <div class="container">
+    <h2>Что можем напечатать для интерьера</h2>
+    <p class="muted sg-sub">Основные форматы интерьерной печати и их преимущества.</p>
+    <div class="od-cards">
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/hc-panel.jpg" alt="Декоративные панно на стене" loading="lazy"></div>
+        <div class="od-card-body"><h3>Настенные панно</h3><p>Декоративная печать во всю стену под размер помещения. Изображение под ваши размеры, насыщенные цвета и детализация.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/hc-office.jpg" alt="Логотип на стене ресепшен" loading="lazy"></div>
+        <div class="od-card-body"><h3>Стеновая графика для офиса</h3><p>Фирменное оформление, которое формирует атмосферу пространства. Подчёркивает корпоративный стиль, информационная графика и схемы.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/hc-logo.jpg" alt="Логотип на стене" loading="lazy"></div>
+        <div class="od-card-body"><h3>Логотип и айдентика на стену</h3><p>Бренд на стене зала, ресепшен или торговой зоны. Точная передача фирменных цветов, чёткие линии и мелкие детали.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/hc-canvas.jpg" alt="Картина крупного формата" loading="lazy"></div>
+        <div class="od-card-body"><h3>Картины на холсте</h3><p>Постеры, репродукции и фотокартины для интерьера. Печать от 1 700 ₽/м², плотный холст с натяжкой на подрамник.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/hc-film.jpg" alt="Плёнка на стекле входной группы" loading="lazy"></div>
+        <div class="od-card-body"><h3>Плёнка на стекло и витрины</h3><p>Оформление окон, перегородок и входных групп. Матовые, цветные и прозрачные плёнки, затемнение и декор стекла.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/photos/hc-other.jpg" alt="Декоративная панель на стене" loading="lazy"></div>
+        <div class="od-card-body"><h3>Другое</h3><p>Не нашли нужную позицию? Опишите задачу — предложим способ изготовления.</p><span class="od-card-more">Рассчитать проект →</span></div>
+      </a>
+    </div>
+    <div class="sg-center"><a href="portfolio.html" class="btn btn-outline">Смотреть все работы</a></div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<section class="section section-alt sg-calc-section" id="calc">
+  <div class="container">
+    <span class="eyebrow">Калькулятор</span>
+    <h2>Рассчитайте стоимость печати</h2>
+    <p class="muted sg-sub">Расчёт по прайсу ВИКОМ: цена за 1 м² выбранного материала с учётом минимального заказа. Укажите размеры и количество — итог обновляется сразу.</p>
+    <div class="sg-calc">
+      <form class="sg-calc-form" id="ipCalcForm" autocomplete="off">
+        <label for="ipMaterial">Материал и вид печати
+          <select id="ipMaterial"></select>
+        </label>
+        <div class="sg-calc-row">
+          <label for="ipW">Ширина, м
+            <input type="number" id="ipW" min="0.1" max="50" step="0.1" inputmode="decimal" placeholder="Например, 2">
+          </label>
+          <label for="ipH">Высота, м
+            <input type="number" id="ipH" min="0.1" max="50" step="0.1" inputmode="decimal" placeholder="Например, 1,5">
+          </label>
+        </div>
+        <label for="ipQty">Количество, шт
+          <input type="number" id="ipQty" min="1" max="1000" step="1" inputmode="numeric" value="1">
+        </label>
+        <label class="sg-check"><input type="checkbox" id="ipLam"> Ламинирование плёнкой (220 ₽/м²)</label>
+        <label class="sg-check"><input type="checkbox" id="ipCut"> Плоттерная резка по контуру (30 ₽/п.м.)</label>
+        <label class="sg-check"><input type="checkbox" id="ipFile"> Эскиз / подготовка макета (от 500 ₽)</label>
+      </form>
+      <div class="sg-calc-result" aria-live="polite">
+        <span class="sg-calc-label">Примерная стоимость</span>
+        <span class="sg-calc-total" id="ipTotal">—</span>
+        <ul class="sg-calc-lines" id="ipLines"><li class="sg-calc-hint">Введите ширину и высоту изделия</li></ul>
+        <p class="sg-calc-note" id="ipNote">Расчёт ориентировочный. Порезка жёстких материалов в размер считается отдельно по прайсу на фрезеровку. Точную стоимость подготовит менеджер.</p>
+        <a href="#contact-form" class="btn btn-primary">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<section class="section section-alt">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Кафе, бары и рестораны</span>
+      <h2>Интерьер заведения в фирменном стиле</h2>
+      <p>Оформляем стены залов, барные зоны и входные группы графикой, которая поддерживает концепцию заведения. Можно сочетать печать с неоновыми и объёмными элементами — вывески и неон делаем на нашем производстве.</p>
+      <a href="#contact-form" class="btn btn-primary">Обсудить оформление</a>
+    </div>
+    <div class="sg-photo"><img src="assets/photos/hc-s-cafe.jpg" alt="Интерьер кафе с брендированием" loading="lazy"><span class="sg-photo-tag">Кафе · Бары</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container sg-split reverse">
+    <div class="sg-photo"><img src="assets/photos/hc-s-office.jpg" alt="Фотогалерея команды на стене офиса" loading="lazy"></div>
+    <div class="sg-text">
+      <span class="eyebrow">Офисы, магазины и шоурумы</span>
+      <h2>Брендированные стены и информационная графика</h2>
+      <p>Логотип на стене ресепшн, фотогалерея команды, фирменные цвета в переговорных, навигационные и информационные материалы. Печатаем на плёнке, холсте, ПВХ и композите — с монтажом или без.</p>
+      <ul class="sg-list"><li>стены ресепшн</li><li>переговорные</li><li>фотогалереи</li><li>информационные панели</li><li>витрины и окна</li><li>навигация</li></ul>
+      <a href="#calc" class="btn btn-primary">Рассчитать печать</a>
+    </div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Материалы</span>
+    <h2>На чём печатаем</h2>
+    <p class="muted sg-sub">Основные материалы для интерьерной печати. Если не уверены в выборе — подскажем по помещению, освещению и бюджету.</p>
+    <div class="bp-mat">
+      <div class="bp-mat-item"><h3>Холст</h3><p class="bp-mat-price">от 1 700 ₽/м²</p><p>Картины и интерьерные панно, с подрамником (от 4 000 ₽/м²) или без.</p></div>
+      <div class="bp-mat-item"><h3>ПВХ 3 / 5 / 10 мм</h3><p class="bp-mat-price">УФ-печать · от 1 900 ₽/м²</p><p>Лёгкие жёсткие панели для стен, стендов, табличек и информационной графики.</p></div>
+      <div class="bp-mat-item"><h3>Композит 3 мм</h3><p class="bp-mat-price">УФ-печать · 4 000 ₽/м²</p><p>Прочные плоские панели для офисов, торговых залов и входных групп.</p></div>
+      <div class="bp-mat-item"><h3>Полистирол молочный</h3><p class="bp-mat-price">УФ-печать · 4 500 ₽/м²</p><p>Рассеивает свет — подходит для лайтбоксов и подсвеченных панелей.</p></div>
+      <div class="bp-mat-item"><h3>Плёнка белая / прозрачная</h3><p class="bp-mat-price">от 390 ₽/м²</p><p>Для стёкол, витрин, стен и наклейки на жёсткие основания. Можно ламинировать.</p></div>
+      <div class="bp-mat-item"><h3>Плёнка перфорированная</h3><p class="bp-mat-price">от 550 ₽/м²</p><p>Для окон и витрин: изображение снаружи, а изнутри сохраняется обзор.</p></div>
+      <div class="bp-mat-item"><h3>Бумага 150 г</h3><p class="bp-mat-price">от 340 ₽/м²</p><p>Постеры, афиши и информационные материалы для помещений.</p></div>
+      <div class="bp-mat-item"><h3>Ваш материал</h3><p class="bp-mat-price">от 600 ₽/м²</p><p>УФ-печать на материале заказчика — без белого цвета 600 ₽/м², с белым — 800 ₽/м².</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">Дополнительно</span>
+    <h2>Постобработка и услуги</h2>
+    <p class="muted sg-sub">Готовим изделие к размещению и защищаем его от износа.</p>
+    <div class="bp-extras">
+      <div class="bp-extra"><b>220 ₽</b><span>Ламинирование плёнкой (прозрачной / белой), м²</span></div>
+      <div class="bp-extra"><b>30 ₽</b><span>Плоттерная резка плёнки по контуру, п.м.</span></div>
+      <div class="bp-extra"><b>от 500 ₽</b><span>Эскиз — зависит от сложности макета</span></div>
+      <div class="bp-extra"><b>400 ₽</b><span>Минимальный заказ УФ-печати на материале заказчика</span></div>
+      <div class="bp-extra"><b>500 ₽</b><span>Минимальный заказ печати на нашем материале</span></div>
+      <div class="bp-extra"><b>по прайсу</b><span>Порезка материала в размер — по прайс-листу «Фрезеровка»</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Полезно знать перед заказом</span>
+      <h2>Технические требования к макету</h2>
+      <p>Правильно подготовленный файл экономит время и деньги. Если макета нет или изображение нужно доработать, дизайнер подготовит файл под печать.</p>
+      <p class="muted">Для панно на всю стену разрешение изображения можно обсудить с менеджером.</p>
+      <a href="design.html" class="btn btn-outline">Заказать макет</a>
+    </div>
+    <ul class="bp-tips">
+      <li><span>Форматы файлов</span><b>pdf, tiff, Ai, SVG</b></li>
+      <li><span>Вылеты</span><b>5 мм</b></li>
+      <li><span>Разрешение растра</span><b>300 dpi</b></li>
+      <li><span>Цветность</span><b>CMYK (100% black)</b></li>
+      <li><span>Ширина печати</span><b>до 3,2 м</b></li>
+      <li><span>Подготовка файла</span><b>от 500 ₽</b></li>
+    </ul>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+
+
+
+
+
+
+
+
+<section class="section section-alt" id="prices">
+  <div class="container">
+    <h2>Цены</h2>
+    <div class="price-tables" data-price-service="horeca"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container sg-seo">
+    <h2>Интерьерная печать в Ельце</h2>
+    <p>ВИКОМ выполняет интерьерную печать для бизнеса и частных заказчиков: настенные панно, фотообои, картины на холсте, печать на плёнке, бумаге и баннере, УФ-печать по ПВХ, композиту, полистиролу и другим материалам.</p>
+    <p>Печатаем на собственном оборудовании шириной до 3,2 м, помогаем с макетом и выбором материала под освещение и поверхность. Также изготавливаем вывески, таблички и стенды и выполняем монтаж.</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2>Частые вопросы</h2>
+    <p class="muted sg-sub">Ответы на вопросы, которые чаще всего задают по интерьерной печати.</p>
+    <div class="sg-faq">
+      <details class="sg-faq-item"><summary>Сколько стоит интерьерная печать?</summary><p>Цена считается за 1 м² выбранного материала: холст — от 1 700 ₽, плёнка — от 390 ₽, бумага — от 340 ₽, УФ-печать на материале заказчика — от 600 ₽, ПВХ 3 мм — 1 900 ₽/м². Минимальный заказ — 400–500 ₽. Рассчитать можно в калькуляторе выше.</p></details>
+      <details class="sg-faq-item"><summary>Что выбрать для стены: холст, плёнку или ПВХ?</summary><p>Холст подходит для картин и панно, плёнка — для наклейки на ровную поверхность и стёкла, ПВХ и композит — для жёстких панелей с креплением. Подскажем по помещению, освещению и бюджету.</p></details>
+      <details class="sg-faq-item"><summary>Чем экосольвентная печать отличается от УФ?</summary><p>Экосольвентная даёт точный цвет на холсте, плёнке и бумаге. УФ-печать работает и по жёстким материалам, использует белый цвет и подходит для ПВХ, композита, оргстекла, дерева и стекла.</p></details>
+      <details class="sg-faq-item"><summary>Можно печатать на своём материале?</summary><p>Да, УФ-печать на материале заказчика: без белого цвета — 600 ₽/м², с белым — 800 ₽/м². Минимальный заказ — 400 ₽.</p></details>
+      <details class="sg-faq-item"><summary>Какой максимальный размер?</summary><p>Ширина печати — до 3,2 м. Длина ограничена размером макета. Более крупные панно печатаются несколькими частями.</p></details>
+      <details class="sg-faq-item"><summary>Какие требования к макету?</summary><p>Форматы pdf, tiff, Ai или SVG, вылеты 5 мм, CMYK, растровые изображения — 300 dpi. Для панно на всю стену разрешение можно обсудить с менеджером.</p></details>
+      <details class="sg-faq-item"><summary>Вы делаете дизайн и макет?</summary><p>Да. Подготовим эскиз и файл для печати — от 500 ₽ в зависимости от сложности.</p></details>
+      <details class="sg-faq-item"><summary>Выполняете ли вы монтаж?</summary><p>Да. Устанавливаем панно и другую печатную продукцию на объекте.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sg-cta">
+      <div>
+        <h2>Нужна интерьерная печать?</h2>
+        <p>Сообщите размеры помещения или просто расскажите о задаче. Подберём материал и рассчитаем стоимость.</p>
+      </div>
+      <div class="sg-cta-actions">
+        <a href="#contact-form" class="btn btn-primary">Связаться с менеджером</a>
+        <a href="tel:+79205129999" class="sg-cta-phone">+7 920 512-99-99</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER / ANDERGROUND ==================== -->
+<footer class="site-footer" id="contact-form">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="footer-map">
+                <div style="position:relative;overflow:hidden;width:100%;height:220px;">
+                    <a href="https://yandex.ru/maps/10713/yelets/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;left:4px;z-index:10;">Елец</a>
+                    <a href="https://yandex.ru/maps/10713/yelets/house/ulitsa_kommunarov_70b/Z0EYcgFlQUUAQFtofXpzeXpkZg==/?ll=38.465806%2C52.628672&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;left:4px;z-index:10;">Улица Коммунаров, 70Б на карте Ельца — Яндекс Карты</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=38.465806%2C52.628672&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=38.465807%2C52.628672&whatshere%5Bzoom%5D=17&z=17" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;border:none;"></iframe>
+                </div>
+            </div>
+            <p>Рекламное агентство полного цикла: наружная реклама, дизайн, сайты и SEO-продвижение.</p>
+        </div>
+        <div class="footer-col footer-contacts">
+            <h4>Контакты</h4>
+            <p><a href="tel:+79205129999">+7 920 512-99-99</a></p>
+            <p><a href="mailto:info@vikom.ru">info@vikom.ru</a></p>
+            <p>г. Елец, ул. Коммунаров, 70Б</p>
+            <p>Пн–Пт: 9:00–18:00</p>
+        </div>
+        <div class="footer-col footer-legal">
+            <h4>Юридическая информация</h4>
+            <p>ИП Кочерьянц Владимир Суренович</p>
+            <p>ИНН 772576617085</p>
+            <p>ОГРНИП 309482133400019</p>
+            <p>Юр. адрес: г. Елец, ул. Коммунаров, 70Б</p>
+        </div>
+        <div class="footer-col footer-form">
+            <h4>Обратная связь</h4>
+            <form id="feedbackForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Сообщение" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+            </form>
+            <p class="form-success" id="formSuccess" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 ВИКОМ. Все права защищены.</p>
+        <p>Политика конфиденциальности · Публичная оферта</p>
+    </div>
+</footer>
+
+<script src="js/services-data.js"></script>
+<script src="js/portfolio-data.js"></script>
+<script src="js/production-data.js"></script>
+<script src="js/blog-data.js"></script>
+<script src="js/prices-data.js"></script>
+<script src="js/render-helpers.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+<script src="js/horeca.js"></script>
+</body>
+</html>

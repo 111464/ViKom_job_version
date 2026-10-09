@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Широкоформатная печать в Ельце — баннеры, плёнка, постеры — ВИКОМ</title>
+<meta name="description" content="Широкоформатная печать в Ельце от ВИКОМ: баннеры, баннерная сетка, плёнка, постеры, холст и УФ-печать шириной до 3,2 м на собственном оборудовании. Цены от 300 ₽/м², калькулятор, монтаж.">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="theme-color" content="#2B2B2B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="services">
+
+<!-- ==================== HEADER (шапка прокручивается вместе со страницей) ==================== -->
+<header class="site-header">
+  <div class="header-topbar">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo-badge">
+          <span class="logo-title">
+            <span class="logo-title-main">ВиКом</span>
+            <span class="logo-title-sub">рекламное агентство</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="header-search">
+        <form id="headerSearchForm" role="search">
+          <input type="search" id="headerSearch" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+          <button type="submit" aria-label="Искать">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </form>
+        <div class="search-suggest" id="searchSuggest"></div>
+      </div>
+
+      <div class="header-actions">
+        <a href="tel:+79205129999" class="header-phone">+7 920 512-99-99</a>
+        <a href="#contact-form" class="btn btn-primary header-cta">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<nav class="dropdown-nav" id="dropdownNav">
+    <div class="nav-search">
+        <form id="navSearchForm" role="search">
+            <input type="search" id="navSearchInput" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+            <button type="submit" aria-label="Искать">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+            </button>
+        </form>
+        <div class="search-suggest" id="navSearchSuggest"></div>
+    </div>
+    <a href="index.html" data-page="index">Главная</a>
+  <div class="nav-services" id="navServices">
+    <button type="button" class="nav-services-toggle" id="navServicesToggle" aria-expanded="false"><span>Услуги</span><svg class="nav-services-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+    <div class="nav-services-submenu">
+      <a href="signage.html" data-sub="signage">Вывески</a>
+      <a href="bigprint.html" data-sub="bigprint">Широкоформатная печать</a>
+      <a href="horeca.html" data-sub="horeca">Интерьерная печать</a>
+      <a href="outdoor.html" data-sub="outdoor">Наружная реклама</a>
+      <a href="gifts.html" data-sub="gifts">Сувениры и мерч в Ельце</a>
+      <a href="interior.html" data-sub="interior">Интерьер и декор</a>
+      <a href="repair.html" data-sub="repair">Ремонт рекламы</a>
+      <a href="design.html" data-sub="design">Дизайн</a>
+      <a href="digital.html" data-sub="digital">Создание и SEO-оптимизация сайтов</a>
+    </div>
+  </div>
+    <a href="blog.html" data-page="blog">Блог</a>
+    <a href="portfolio.html" data-page="portfolio">Портфолио</a>
+    <a href="prices.html" data-page="prices">Цены</a>
+    <a href="production.html" data-page="production">Производство</a>
+    <a href="about.html" data-page="about">О нас</a>
+    <div class="nav-bottom">
+
+        <a href="#contact-form" class="nav-feedback">Обратная связь</a>
+
+        <div class="nav-contacts">
+            <a href="tel:+79205129999">+7 920 512-99-99</a><span class="nav-contacts-sep" aria-hidden="true">·</span><a href="mailto:info@vikom.ru">info@vikom.ru</a>
+        </div>
+        <div class="nav-address">г. Елец, ул. Коммунаров, 70Б</div>
+    </div>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ==================== TICKER ==================== -->
+<div class="ticker-strip">
+  <div class="ticker-track">
+    <span>Наружная реклама</span><span>Вывески</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Интерьерная печать</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Создание и SEO-оптимизация сайтов</span>
+    <span>Наружная реклама</span><span>Вывески</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Интерьерная печать</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Создание и SEO-оптимизация сайтов</span>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="page-hero sg-hero">
+  <div class="container sg-hero-grid">
+    <div class="sg-hero-copy">
+      <p class="service-breadcrumb"><a href="index.html">Главная</a> / <a href="services.html">Услуги</a> / Широкоформатная печать</p>
+      <span class="eyebrow">Широкоформатная печать</span>
+      <h1>Широкоформатная печать в Ельце</h1>
+      <p class="sg-lead">Печатаем баннеры, плёнку, постеры, холсты и другие материалы шириной до 3,2 м на собственном оборудовании — для фасадов, витрин, мероприятий и интерьеров.</p>
+      <p class="muted">От подготовки макета и печати до постобработки и монтажа.</p>
+      <p class="sg-chip">г. Елец, ул. Коммунаров, 70Б</p>
+      <div class="service-detail-actions">
+        <a href="#calc" class="btn btn-primary">Рассчитать печать</a>
+        <a href="#prices" class="btn btn-outline">Смотреть цены</a>
+      </div>
+      <ul class="sg-bullets">
+        <li>Собственная печать без посредников</li><li>Ширина полотна до 3,2 м</li><li>Помощь с макетом</li><li>Люверсы, проклейка, монтаж</li>
+      </ul>
+    </div>
+    <div class="sg-hero-photo">
+      <img src="assets/photos/bp-hero.jpg" alt="Широкоформатная печать баннера" loading="lazy">
+      <span class="sg-photo-tag">Баннеры · Плёнка · Постеры</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ЦИФРЫ ==================== -->
+<section class="bp-stats-wrap">
+  <div class="container">
+    <ul class="bp-stats">
+      <li><b>до 3,2 м</b><span>ширина печати одним полотном</span></li>
+      <li><b>от 300 ₽/м²</b><span>стоимость печати</span></li>
+      <li><b>3 вида</b><span>печати: сольвент, экосольвент, УФ</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== ЧТО ПЕЧАТАЕМ ==================== -->
+<section class="section">
+  <div class="container">
+    <h2>Что можем напечатать</h2>
+    <p class="muted sg-sub">Основные форматы широкоформатной печати и их преимущества.</p>
+    <div class="od-cards">
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/bp-banner.jpg" alt="Баннер на заборе" loading="lazy"></div>
+        <div class="od-card-body"><h3>Баннеры</h3><p>Самый популярный формат уличной рекламы. Прочные и устойчивые к погоде, ширина до 3,2 м одним полотном.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/bp-wall.jpg" alt="Большое полотно на стене здания" loading="lazy"></div>
+        <div class="od-card-body"><h3>Брандмауэры</h3><p>Крупные полотна для глухих стен и больших фасадов. Огромная площадь охвата, печать по частям с точной стыковкой.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/bp-mesh.jpg" alt="Рекламные полотна на фасаде здания" loading="lazy"></div>
+        <div class="od-card-body"><h3>Баннерная сетка на фасад</h3><p>Реклама для лесов, ограждений и больших поверхностей. Пропускает ветер — меньше нагрузка, подходит для фасадов и ограждений.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/bp-film.jpg" alt="Витрины, оклеенные рекламной плёнкой" loading="lazy"></div>
+        <div class="od-card-body"><h3>Плёнка для витрин, окон и фасадов</h3><p>Оформление стёкол и витрин без переделки конструкции. Самоклеящиеся и перфорированные плёнки, точная цветопередача.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/photos/bp-poster.jpg" alt="Печатные постеры" loading="lazy"></div>
+        <div class="od-card-body"><h3>Постеры, плакаты и афиши</h3><p>Печатная продукция для помещений и мероприятий. Яркие цвета и чёткая детализация, разные виды бумаги.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/photos/bp-other.jpg" alt="Рекламная печать на фасаде" loading="lazy"></div>
+        <div class="od-card-body"><h3>Другое</h3><p>Не нашли нужную позицию? Опишите задачу — предложим способ изготовления.</p><span class="od-card-more">Рассчитать проект →</span></div>
+      </a>
+    </div>
+    <div class="sg-center"><a href="portfolio.html" class="btn btn-outline">Смотреть все работы</a></div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== КАЛЬКУЛЯТОР ==================== -->
+<section class="section section-alt sg-calc-section" id="calc">
+  <div class="container">
+    <span class="eyebrow">Калькулятор</span>
+    <h2>Рассчитайте стоимость печати</h2>
+    <p class="muted sg-sub">Расчёт идёт по прайсу ВИКОМ: цена за 1 м² выбранного материала и вида печати с учётом минимального заказа. Укажите размеры и тираж — итог обновляется сразу.</p>
+    <div class="sg-calc">
+      <form class="sg-calc-form" id="bpCalcForm" autocomplete="off">
+        <label for="bpMaterial">Материал
+          <select id="bpMaterial"></select>
+        </label>
+        <label for="bpPrint">Вид печати
+          <select id="bpPrint"></select>
+        </label>
+        <div class="sg-calc-row">
+          <label for="bpW">Ширина, м
+            <input type="number" id="bpW" min="0.1" max="50" step="0.1" inputmode="decimal" placeholder="Например, 3">
+          </label>
+          <label for="bpH">Высота, м
+            <input type="number" id="bpH" min="0.1" max="50" step="0.1" inputmode="decimal" placeholder="Например, 1,5">
+          </label>
+        </div>
+        <label for="bpQty">Количество, шт
+          <input type="number" id="bpQty" min="1" max="1000" step="1" inputmode="numeric" value="1">
+        </label>
+        <label class="sg-check"><input type="checkbox" id="bpLuvers"> Люверсы по периметру (шаг ≈ 50 см, 17 ₽/шт)</label>
+        <label class="sg-check"><input type="checkbox" id="bpRope"> Проклейка периметра с верёвкой (120 ₽/п.м.)</label>
+        <label class="sg-check"><input type="checkbox" id="bpLam"> Ламинирование плёнкой (220 ₽/м²)</label>
+        <label class="sg-check"><input type="checkbox" id="bpFile"> Эскиз / подготовка макета (от 500 ₽)</label>
+      </form>
+      <div class="sg-calc-result" aria-live="polite">
+        <span class="sg-calc-label">Примерная стоимость</span>
+        <span class="sg-calc-total" id="bpTotal">—</span>
+        <ul class="sg-calc-lines" id="bpLines"><li class="sg-calc-hint">Введите ширину и высоту изделия</li></ul>
+        <p class="sg-calc-note" id="bpNote">Расчёт ориентировочный. Точную стоимость, сроки и макет подготовит менеджер.</p>
+        <a href="#contact-form" class="btn btn-primary">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== БАННЕРЫ ==================== -->
+<section class="section">
+  <div class="container sg-split">
+    <div class="sg-photo"><img src="assets/photos/bp-s-banner.jpg" alt="Баннеры на фасаде ломбарда" loading="lazy"></div>
+    <div class="sg-text">
+      <span class="eyebrow">Баннеры</span>
+      <h2>Самый популярный формат уличной рекламы</h2>
+      <p>Баннер — прочная, яркая и экономичная реклама для фасадов, заборов, строительных площадок и торговых точек. Печатаем на ламинированной и литой баннерной ткани разной плотности, шириной до 3,2 м без швов.</p>
+      <ul class="sg-list"><li>ламинированный 280 / 340 / 440 г</li><li>литой 400 / 510 г</li><li>баннерная сетка</li><li>сольвентная печать</li><li>люверсы и проклейка</li><li>печать большими полотнами</li></ul>
+      <a href="#calc" class="btn btn-primary">Рассчитать баннер</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ПЛЁНКА И ВИТРИНЫ ==================== -->
+<section class="section section-alt">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Плёнка и витрины</span>
+      <h2>Оформление окон, витрин и стёкол</h2>
+      <p>Самоклеящаяся плёнка подходит для витрин, входных групп, окон офисов и торговых залов. Печатаем на белой и прозрачной плёнке, а также на перфорированной — она пропускает свет и позволяет видеть улицу изнутри.</p>
+      <a href="#calc" class="btn btn-primary">Заказать плёнку</a>
+    </div>
+    <div class="sg-photo"><img src="assets/photos/bp-s-film.jpg" alt="Оформление витрин плёнкой" loading="lazy"><span class="sg-photo-tag">Витрины · Плёнка</span></div>
+  </div>
+</section>
+
+<!-- ==================== ИНТЕРЬЕРНАЯ ПЕЧАТЬ ==================== -->
+<section class="section">
+  <div class="container sg-split reverse">
+    <div class="sg-photo"><img src="assets/photos/bp-s-poster.jpg" alt="Постер в рамке" loading="lazy"></div>
+    <div class="sg-text">
+      <span class="eyebrow">Постеры и интерьерная печать</span>
+      <h2>Постеры, афиши и картины на холсте</h2>
+      <p>Для интерьеров используем экосольвентную и УФ-печать с точной цветопередачей. Печатаем постеры на бумаге форматов от А4 до А0, афиши, информационные материалы и картины на холсте — с подрамником или без.</p>
+      <ul class="sg-list"><li>бумага 150 г, А4–А0</li><li>холст без подрамника</li><li>холст на подрамнике</li><li>афиши и плакаты</li><li>фотопечать</li><li>материалы для стендов</li></ul>
+      <a href="#prices" class="btn btn-primary">Смотреть цены</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== МЕРОПРИЯТИЯ И ВЫСТАВКИ ==================== -->
+<section class="section section-alt">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Мероприятия и выставки</span>
+      <h2>Большой формат для событий и городских проектов</h2>
+      <p>Печатаем баннеры и панно для фотовыставок, праздничного оформления, фестивалей и рекламных акций. Полотно любого размера отпечатаем одним куском или склеим из нескольких.</p>
+      <a href="#contact-form" class="btn btn-primary">Обсудить проект</a>
+    </div>
+    <div class="sg-photo"><img src="assets/photos/bp-s-expo.jpg" alt="Баннер для выставки на ограждении" loading="lazy"><span class="sg-photo-tag">Выставки · Баннеры</span></div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== МАТЕРИАЛЫ ==================== -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">Материалы</span>
+    <h2>Из чего печатаем</h2>
+    <p class="muted sg-sub">Основные материалы для широкоформатной печати. Если не уверены, что выбрать, — подскажем по задаче и месту размещения.</p>
+    <div class="bp-mat">
+      <div class="bp-mat-item"><h3>Баннер ламинированный</h3><p class="bp-mat-price">280 / 340 / 440 г · от 300 ₽/м²</p><p>Универсальный вариант для наружной рекламы: вывески, растяжки, ограждения, витрины магазинов.</p></div>
+      <div class="bp-mat-item"><h3>Баннер литой</h3><p class="bp-mat-price">400 / 510 г · от 420 ₽/м²</p><p>Плотный материал с насыщенным цветом для крупных конструкций. Сторона макета — не менее 3 м.</p></div>
+      <div class="bp-mat-item"><h3>Баннерная сетка</h3><p class="bp-mat-price">от 380 ₽/м²</p><p>Пропускает ветер и подходит для больших фасадов, ограждений и строительных лесов.</p></div>
+      <div class="bp-mat-item"><h3>Плёнка белая / прозрачная</h3><p class="bp-mat-price">от 300 ₽/м²</p><p>Самоклеящаяся плёнка для стёкол, витрин, стен, вывесок и графики на жёстких основаниях.</p></div>
+      <div class="bp-mat-item"><h3>Плёнка перфорированная</h3><p class="bp-mat-price">от 490 ₽/м²</p><p>Для окон и витрин: изображение снаружи, а изнутри сохраняется обзор и свет.</p></div>
+      <div class="bp-mat-item"><h3>Бумага 150 г</h3><p class="bp-mat-price">от 300 ₽/м² · А4 — от 40 ₽</p><p>Постеры, афиши, плакаты и информационные материалы для помещений.</p></div>
+      <div class="bp-mat-item"><h3>Холст</h3><p class="bp-mat-price">от 1 700 ₽/м²</p><p>Картины и интерьерные панно, с подрамником или без.</p></div>
+      <div class="bp-mat-item"><h3>Жёсткие материалы</h3><p class="bp-mat-price">УФ-печать · ПВХ от 1 900 ₽/м²</p><p>ПВХ, композит, полистирол, оргстекло — для табличек, панелей и оформления интерьеров.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ПОСТОБРАБОТКА ==================== -->
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Постобработка</span>
+    <h2>Доводим изделие до готового вида</h2>
+    <p class="muted sg-sub">Готовим печатное полотно к монтажу и защищаем от солнца, влаги и износа.</p>
+    <div class="bp-extras">
+      <div class="bp-extra"><b>17 ₽</b><span>Люверс с установкой на баннер нашего производства, шт.</span></div>
+      <div class="bp-extra"><b>100 ₽</b><span>Склейка баннера, п.м.</span></div>
+      <div class="bp-extra"><b>120 ₽</b><span>Проклейка периметра с верёвкой, п.м.</span></div>
+      <div class="bp-extra"><b>220 ₽</b><span>Ламинирование плёнкой (прозрачной / белой), м²</span></div>
+      <div class="bp-extra"><b>30 ₽</b><span>Плоттерная резка плёнки по контуру, п.м.</span></div>
+      <div class="bp-extra"><b>от 500 ₽</b><span>Эскиз — зависит от сложности макета</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ТРЕБОВАНИЯ К МАКЕТУ ==================== -->
+<section class="section section-alt">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Полезно знать перед заказом</span>
+      <h2>Технические требования к макету</h2>
+      <p>Правильно подготовленный файл экономит время и деньги. Если макета нет или нужно его доработать, наш дизайнер подготовит файл под печать.</p>
+      <p class="muted">Для крупных баннеров, которые смотрят издалека, разрешение изображения можно обсудить с менеджером.</p>
+      <a href="design.html" class="btn btn-outline">Заказать макет</a>
+    </div>
+    <ul class="bp-tips">
+      <li><span>Форматы файлов</span><b>pdf, tiff, Ai, SVG</b></li>
+      <li><span>Вылеты</span><b>5 мм</b></li>
+      <li><span>Разрешение растра</span><b>300 dpi</b></li>
+      <li><span>Цветность</span><b>CMYK (100% black)</b></li>
+      <li><span>Ширина рулона</span><b>до 3,2 м</b></li>
+      <li><span>Подготовка файла</span><b>от 500 ₽</b></li>
+    </ul>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+
+
+
+
+
+
+
+
+<!-- ==================== ЦЕНЫ ==================== -->
+<section class="section" id="prices">
+  <div class="container">
+    <h2>Цены</h2>
+    <div class="price-tables" data-price-service="bigprint"></div>
+  </div>
+</section>
+
+<!-- ==================== SEO-ТЕКСТ ==================== -->
+<section class="section section-alt">
+  <div class="container sg-seo">
+    <h2>Широкоформатная печать в Ельце</h2>
+    <p>ВИКОМ выполняет широкоформатную печать для бизнеса и частных заказчиков: баннеры, баннерная сетка, самоклеящаяся и перфорированная плёнка, постеры, афиши, картины на холсте и УФ-печать по жёстким материалам.</p>
+    <p>Печатаем на собственном оборудовании шириной до 3,2 м, выполняем люверсы, проклейку, склейку и ламинирование, помогаем с макетом. Также изготавливаем вывески, таблички и стенды, выполняем монтаж и ремонт рекламных конструкций.</p>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="section">
+  <div class="container">
+    <h2>Частые вопросы</h2>
+    <p class="muted sg-sub">Ответы на вопросы, которые чаще всего задают по широкоформатной печати.</p>
+    <div class="sg-faq">
+      <details class="sg-faq-item"><summary>Сколько стоит широкоформатная печать?</summary><p>Цена считается за 1 м² выбранного материала и вида печати: баннер — от 300 ₽/м², плёнка — от 300 ₽/м², бумага — от 300 ₽/м², холст — от 1 700 ₽/м². Минимальный заказ на баннер — 600 ₽, на плёнку и бумагу — 300 ₽. Рассчитать можно в калькуляторе выше.</p></details>
+      <details class="sg-faq-item"><summary>Какой максимальный размер печати?</summary><p>Ширина рулона — до 3,2 м. Длина ограничена только размером макета. Если изделие шире рулона, полотна склеиваются (100 ₽ за погонный метр шва).</p></details>
+      <details class="sg-faq-item"><summary>Чем отличаются сольвентная, экосольвентная и УФ-печать?</summary><p>Сольвентная — самая экономичная и подходит для уличных баннеров. Экосольвентная даёт более точную цветопередачу и подходит для интерьеров и плёнок. УФ-печать работает и по рулонным, и по жёстким материалам с высокой детализацией.</p></details>
+      <details class="sg-faq-item"><summary>Какой баннер выбрать для улицы?</summary><p>Для большинства задач подходит ламинированный баннер 340–440 г. Для крупных конструкций используют литой баннер, а для больших фасадов и ограждений с ветровой нагрузкой — баннерную сетку.</p></details>
+      <details class="sg-faq-item"><summary>Какие требования к макету?</summary><p>Форматы pdf, tiff, Ai или SVG, вылеты 5 мм, цветовая модель CMYK, разрешение растровых изображений 300 dpi. Для больших баннеров разрешение можно обсудить с менеджером.</p></details>
+      <details class="sg-faq-item"><summary>Можно ли заказать макет?</summary><p>Да. Если макета нет, подготовим эскиз и файл для печати — от 500 ₽ в зависимости от сложности.</p></details>
+      <details class="sg-faq-item"><summary>Делаете ли вы люверсы и проклейку?</summary><p>Да. Люверсы на баннер нашего производства — 17 ₽/шт, проклейка периметра с верёвкой — 120 ₽/п.м., ламинирование плёнкой — 220 ₽/м².</p></details>
+      <details class="sg-faq-item"><summary>Можно печатать на своём материале?</summary><p>Да, для УФ-печати возможна печать на материале заказчика. Стоимость и условия уточняйте у менеджера.</p></details>
+      <details class="sg-faq-item"><summary>Выполняете ли вы монтаж?</summary><p>Да. Устанавливаем печатную продукцию и рекламные конструкции на объекте. Также выполняем ремонт и обслуживание рекламы.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="sg-cta">
+      <div>
+        <h2>Нужна печать?</h2>
+        <p>Пришлите размеры и макет или просто расскажите о задаче. Подберём материал, рассчитаем стоимость и назовём сроки.</p>
+      </div>
+      <div class="sg-cta-actions">
+        <a href="#contact-form" class="btn btn-primary">Связаться с менеджером</a>
+        <a href="tel:+79205129999" class="sg-cta-phone">+7 920 512-99-99</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER / ANDERGROUND ==================== -->
+<footer class="site-footer" id="contact-form">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="footer-map">
+                <div style="position:relative;overflow:hidden;width:100%;height:220px;">
+                    <a href="https://yandex.ru/maps/10713/yelets/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;left:4px;z-index:10;">Елец</a>
+                    <a href="https://yandex.ru/maps/10713/yelets/house/ulitsa_kommunarov_70b/Z0EYcgFlQUUAQFtofXpzeXpkZg==/?ll=38.465806%2C52.628672&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;left:4px;z-index:10;">Улица Коммунаров, 70Б на карте Ельца — Яндекс Карты</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=38.465806%2C52.628672&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=38.465807%2C52.628672&whatshere%5Bzoom%5D=17&z=17" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;border:none;"></iframe>
+                </div>
+            </div>
+            <p>Рекламное агентство полного цикла: наружная реклама, дизайн, сайты и SEO-продвижение.</p>
+        </div>
+        <div class="footer-col footer-contacts">
+            <h4>Контакты</h4>
+            <p><a href="tel:+79205129999">+7 920 512-99-99</a></p>
+            <p><a href="mailto:info@vikom.ru">info@vikom.ru</a></p>
+            <p>г. Елец, ул. Коммунаров, 70Б</p>
+            <p>Пн–Пт: 9:00–18:00</p>
+        </div>
+        <div class="footer-col footer-legal">
+            <h4>Юридическая информация</h4>
+            <p>ИП Кочерьянц Владимир Суренович</p>
+            <p>ИНН 772576617085</p>
+            <p>ОГРНИП 309482133400019</p>
+            <p>Юр. адрес: г. Елец, ул. Коммунаров, 70Б</p>
+        </div>
+        <div class="footer-col footer-form">
+            <h4>Обратная связь</h4>
+            <form id="feedbackForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Сообщение" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+            </form>
+            <p class="form-success" id="formSuccess" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 ВИКОМ. Все права защищены.</p>
+        <p>Политика конфиденциальности · Публичная оферта</p>
+    </div>
+</footer>
+
+<script src="js/services-data.js"></script>
+<script src="js/portfolio-data.js"></script>
+<script src="js/production-data.js"></script>
+<script src="js/blog-data.js"></script>
+<script src="js/prices-data.js"></script>
+<script src="js/render-helpers.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bigprint.js"></script>
+</body>
+</html>
