@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сувениры и мерч с логотипом в Ельце — брендирование на заказ | ВИКОМ</title>
+<meta name="description" content="Сувениры и мерч с логотипом в Ельце: одежда, кружки, подарки, наборы и корпоративная продукция. Подбор, дизайн и разные способы нанесения.">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="theme-color" content="#2B2B2B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="services">
+
+<!-- ==================== HEADER (шапка прокручивается вместе со страницей) ==================== -->
+<header class="site-header">
+  <div class="header-topbar">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo-badge">
+          <span class="logo-title">
+            <span class="logo-title-main">ВиКом</span>
+            <span class="logo-title-sub">рекламное агентство</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="header-search">
+        <form id="headerSearchForm" role="search">
+          <input type="search" id="headerSearch" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+          <button type="submit" aria-label="Искать">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </form>
+        <div class="search-suggest" id="searchSuggest"></div>
+      </div>
+
+      <div class="header-actions">
+        <a href="tel:+79205129999" class="header-phone">+7 920 512-99-99</a>
+        <a href="#contact-form" class="btn btn-primary header-cta">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<nav class="dropdown-nav" id="dropdownNav">
+    <div class="nav-search">
+        <form id="navSearchForm" role="search">
+            <input type="search" id="navSearchInput" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+            <button type="submit" aria-label="Искать">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+            </button>
+        </form>
+        <div class="search-suggest" id="navSearchSuggest"></div>
+    </div>
+    <a href="index.html" data-page="index">Главная</a>
+  <div class="nav-divider" aria-hidden="true"></div>
+  <a href="signage.html" class="nav-service" data-sub="signage">Вывески</a>
+  <a href="bigprint.html" class="nav-service" data-sub="bigprint">Широкоформатная печать</a>
+  <a href="horeca.html" class="nav-service" data-sub="horeca">Интерьерная печать</a>
+  <a href="outdoor.html" class="nav-service" data-sub="outdoor">Наружная реклама</a>
+  <a href="gifts.html" class="nav-service" data-sub="gifts">Сувениры и мерч в Ельце</a>
+  <a href="interior.html" class="nav-service" data-sub="interior">Интерьер и декор</a>
+  <a href="repair.html" class="nav-service" data-sub="repair">Ремонт рекламы</a>
+  <a href="design.html" class="nav-service" data-sub="design">Дизайн</a>
+  <a href="digital.html" class="nav-service" data-sub="digital">Создание и SEO-оптимизация сайтов</a>
+  <div class="nav-divider" aria-hidden="true"></div>
+    <a href="blog.html" data-page="blog">Блог</a>
+    <a href="portfolio.html" data-page="portfolio">Портфолио</a>
+    <a href="prices.html" data-page="prices">Цены</a>
+    <a href="production.html" data-page="production">Производство</a>
+    <a href="about.html" data-page="about">О нас</a>
+    <div class="nav-bottom">
+
+        <a href="#contact-form" class="nav-feedback">Обратная связь</a>
+
+        <div class="nav-contacts">
+            <a href="tel:+79205129999">+7 920 512-99-99</a><span class="nav-contacts-sep" aria-hidden="true">·</span><a href="mailto:info@vikom.ru">info@vikom.ru</a>
+        </div>
+        <div class="nav-address">г. Елец, ул. Коммунаров, 70Б</div>
+    </div>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ==================== TICKER ==================== -->
+<div class="ticker-strip">
+  <div class="ticker-track">
+    <span>Наружная реклама</span><span>Вывески</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Интерьерная печать</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Создание и SEO-оптимизация сайтов</span>
+    <span>Наружная реклама</span><span>Вывески</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Интерьерная печать</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Создание и SEO-оптимизация сайтов</span>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="page-hero sg-hero">
+  <div class="container sg-hero-grid">
+    <div class="sg-hero-copy">
+      <p class="service-breadcrumb"><a href="index.html">Главная</a> → Сувениры и мерч в Ельце</p>
+      <span class="eyebrow">Собственное рекламное производство</span>
+      <h1>Сувениры и мерч в <em class="od-accent">Ельце</em></h1>
+      <p class="sg-lead">Брендируем одежду, подарки и сувенирную продукцию для бизнеса</p>
+      <p class="muted">Футболки, худи, кружки, ручки, шопперы, термосы, подарочные наборы, награды и другие изделия с логотипом или индивидуальным дизайном. Поможем подобрать продукцию, подготовить макет и выбрать подходящий способ нанесения.</p>
+      <div class="service-detail-actions">
+        <a href="#contact-form" class="btn btn-primary">Рассчитать стоимость</a>
+        <a href="portfolio.html" class="btn btn-outline">Смотреть наши работы ↓</a>
+      </div>
+      <ul class="sg-bullets">
+        <li>Собственное производство</li><li>Помощь с дизайном</li><li>Брендирование под задачу</li><li>Работаем по договору</li>
+      </ul>
+      <p class="sg-chip">Елец и Липецкая область</p>
+    </div>
+    <div class="sg-hero-photo">
+      <img src="assets/merch/aprons-jazz-blues.jpg" alt="Брендированные фартуки Jazz & Blues" loading="eager" decoding="async">
+      <span class="sg-photo-tag">Полный цикл</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ЦИФРЫ ==================== -->
+<section class="od-stats-wrap">
+  <div class="container od-stats">
+    <div class="od-stat"><b>17+</b><span>лет в рекламе</span></div>
+    <div class="od-stat"><b>840+</b><span>реализованных проектов</span></div>
+    <div class="od-stat"><b>90%</b><span>клиентов остаются с нами</span></div>
+    <div class="od-stat"><b>с 2009</b><span>работаем в Ельце</span></div>
+  </div>
+</section>
+
+<!-- ==================== ВВОД ==================== -->
+<section class="section" style="padding-bottom:0;">
+  <div class="container">
+    <p class="od-intro">Брендированная одежда, корпоративные подарки и сувенирная продукция для бизнеса, мероприятий, сотрудников и клиентов. Поможем подобрать изделия, подготовить макет и выбрать способ нанесения.</p>
+  </div>
+</section>
+
+<!-- ==================== ВИДЫ ==================== -->
+<section class="section" id="works">
+  <div class="container">
+    <h2>Сувениры и мерч</h2>
+    <div class="od-cards merch-cards">
+      <a class="od-card" href="#prices">
+        <div class="od-card-img"><img src="assets/merch/spec.jpg" alt="Белая спецовка с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Корпоративная одежда</h3><p>Одежда с нанесением логотипа для сотрудников, промоутеров, магазинов, ресторанов и компаний.</p><span class="od-card-more">Смотреть цены →</span></div>
+      </a>
+      <a class="od-card" href="#prices">
+        <div class="od-card-img"><img src="assets/merch/tshirt.jpg" alt="Белая футболка с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Футболки с принтом</h3><p>Печать на футболках для компаний, мероприятий, команд и промоакций. Логотипы, надписи, изображения и индивидуальный дизайн.</p><span class="od-card-more">Смотреть цены →</span></div>
+      </a>
+      <a class="od-card" href="#prices">
+        <div class="od-card-img"><img src="assets/merch/hoodie.jpg" alt="Белое худи с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Худи</h3><p>Брендированные худи и толстовки с логотипом, принтом или фирменной графикой для команд, сотрудников и мероприятий.</p><span class="od-card-more">Смотреть цены →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/shirt.jpg" alt="Рубашка с вышитым логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Рубашки</h3><p>Рубашки с логотипом на груди для сотрудников, администраторов и представителей компании.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/cap.jpg" alt="Белая кепка с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Кепки</h3><p>Кепки и бейсболки с логотипом, надписью или фирменной символикой.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/tote.jpg" alt="Шоппер с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Шопперы</h3><p>Текстильные сумки-шопперы с логотипом, принтом или индивидуальным дизайном для брендов, магазинов и мероприятий.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/bag.jpg" alt="Сумка с логотипом ВИКОМ, тиснение золотом" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Сумки</h3><p>Рюкзаки, спортивные, дорожные и повседневные сумки с нанесением логотипа или фирменной символики.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/backpack.jpg" alt="Рюкзак с логотипом ВИКОМ, тиснение золотом" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Рюкзаки</h3><p>Рюкзаки с нанесением логотипа и фирменной символики — для команд, мероприятий и корпоративных подарков.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/mug.jpg" alt="Кружка с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Кружки</h3><p>Кружки с логотипом, фотографией, надписью или индивидуальным дизайном для компаний, подарков и мероприятий.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/tumbler.jpg" alt="Термокружка с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Термокружки</h3><p>Брендированные термокружки с логотипом для сотрудников, клиентов, мероприятий и корпоративных подарков.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/pen.jpg" alt="Ручка с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Ручки</h3><p>Рекламные и корпоративные ручки с нанесением логотипа, названия компании или контактной информации.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/notebook.jpg" alt="Ежедневник с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Ежедневники</h3><p>Корпоративные ежедневники и планинги с логотипом, фирменной символикой и индивидуальным оформлением.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/case.jpg" alt="Чехол для телефона с логотипом ВИКОМ" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Чехлы для телефонов</h3><p>Чехлы для смартфонов с логотипом, принтом или индивидуальным дизайном — для брендов, команд и подарков.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/pillow.jpg" alt="Подушка с логотипом ВИКОМ — пример корпоративного подарка" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Корпоративные подарки</h3><p>Подарки для сотрудников, клиентов и партнёров с фирменным оформлением и брендированием под задачу компании.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#contact-form">
+        <div class="od-card-img"><img src="assets/merch/badge.jpg" alt="Металлический бейдж с логотипом ВИКОМ и именем сотрудника" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Другое</h3><p>Не нашли нужную продукцию? Опишите задачу — подберём изделие и подходящий способ брендирования.</p><span class="od-card-more">Рассчитать проект →</span></div>
+      </a>
+    </div>
+    <div class="sg-center"><a href="portfolio.html" class="btn btn-outline">Смотреть все работы</a></div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== ЦЕНЫ ==================== -->
+<section class="section" id="prices">
+  <div class="container">
+    <h2>Цены</h2>
+    <div class="price-tables" data-price-service="gifts"></div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== ПРОИЗВОДСТВО / SEO-ТЕКСТ ==================== -->
+<section class="section">
+  <div class="container sg-split">
+    <div class="sg-photo"><img src="assets/merch/aprons-flowers.jpg" alt="Фартуки студии цветов с нанесённым логотипом ВИКОМ" loading="lazy" decoding="async"><span class="sg-photo-tag">Мерч</span></div>
+    <div class="sg-text">
+      <span class="eyebrow">Брендирование корпоративной и промо-продукции в Ельце и области</span>
+      <h2>Сувениры и мерч с логотипом в Ельце «ВИКОМ»</h2>
+      <h3>Изготовление сувениров и мерча в Ельце</h3>
+      <p>«ВИКОМ» изготавливает и брендирует сувенирную продукцию и корпоративный мерч в Ельце. Наносим логотипы и индивидуальный дизайн на футболки, худи, поло, кепки, шопперы, сумки, кружки, термосы, бутылки и другие изделия.</p>
+      <p>Для рекламных кампаний, выставок и мероприятий предлагаем ручки, брелоки, значки, магниты, ланьярды, воздушные шары и промо-сувениры. Для сотрудников, клиентов и партнёров можно заказать ежедневники, флешки, электронику, корпоративные подарки и подарочные наборы.</p>
+      <p>Также изготавливаем Welcome Pack, кубки, медали и индивидуальные награды. Поможем подобрать продукцию, разработать оформление и выбрать подходящий способ брендирования.</p>
+      <p>Работаем с компаниями и частными заказчиками из Ельца и Липецкой области. Можно заказать как отдельный вид сувенирной продукции, так и комплексный комплект мерча в едином фирменном стиле.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ЧАСТЫЕ ВОПРОСЫ ==================== -->
+<section class="section section-alt">
+  <div class="container">
+    <h2>Частые вопросы</h2>
+    <p class="muted sg-sub">10 вопросов</p>
+    <div class="sg-faq">
+      <details class="sg-faq-item"><summary>Какую сувенирную продукцию можно заказать?</summary><p>Брендируем одежду, кружки, термосы, бутылки, ручки, шопперы, сумки, брелоки, значки, магниты, флешки, электронику, подарочные наборы, награды и другую сувенирную продукцию.</p></details>
+      <details class="sg-faq-item"><summary>Можно нанести логотип компании?</summary><p>Да. На большинство изделий можно нанести логотип, название компании, фирменную графику, надпись или другой дизайн.</p></details>
+      <details class="sg-faq-item"><summary>Вы помогаете подобрать сувениры?</summary><p>Да. Расскажите, для кого предназначен мерч, какой нужен тираж и ориентировочный бюджет — предложим подходящие варианты.</p></details>
+      <details class="sg-faq-item"><summary>Можно заказать небольшой тираж?</summary><p>Да. Минимальное количество зависит от конкретного изделия и способа нанесения. Для небольших заказов предложим подходящий вариант изготовления.</p></details>
+      <details class="sg-faq-item"><summary>Делаете корпоративную одежду?</summary><p>Да. Брендируем футболки, худи, толстовки, поло, кепки и другую одежду для сотрудников, команд, мероприятий и промоакций.</p></details>
+      <details class="sg-faq-item"><summary>Можно заказать корпоративные подарочные наборы?</summary><p>Да. Подберём изделия, соберём их в единую концепцию и выполним брендирование. Возможны подарочные наборы для сотрудников, клиентов и партнёров.</p></details>
+      <details class="sg-faq-item"><summary>Делаете Welcome Pack для сотрудников?</summary><p>Да. Можем собрать набор для новых сотрудников: одежда, кружки, бутылки, ежедневники, ручки, аксессуары и другие брендированные изделия.</p></details>
+      <details class="sg-faq-item"><summary>Можно сделать мерч по индивидуальному дизайну?</summary><p>Да. Можно использовать готовый макет или заказать разработку оформления у нас. Подберём продукцию и способ нанесения под дизайн.</p></details>
+      <details class="sg-faq-item"><summary>Изготавливаете кубки, медали и корпоративные награды?</summary><p>Да. Делаем кубки, медали, памятные награды и призы с индивидуальным оформлением для соревнований, компаний и мероприятий.</p></details>
+      <details class="sg-faq-item"><summary>Как узнать стоимость?</summary><p>Стоимость зависит от выбранного изделия, количества, способа нанесения и сложности макета. Отправьте пример или описание задачи — подготовим расчёт.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ПОМОЩЬ С ВЫБОРОМ ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="sg-cta">
+      <div>
+        <span class="eyebrow eyebrow-light">Помощь с выбором</span>
+        <h2>Нужна помощь с выбором?</h2>
+        <p>Не знаете, какой вариант подойдёт именно для вашей задачи? Расскажите, что нужно изготовить — подскажем оптимальное решение.</p>
+      </div>
+      <div class="sg-cta-actions">
+        <a href="#contact-form" class="btn btn-primary">Получить консультацию</a>
+        <a href="tel:+79205129999" class="sg-cta-phone">+7 920 512-99-99</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER / ANDERGROUND ==================== -->
+<footer class="site-footer" id="contact-form">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="footer-map">
+                <div style="position:relative;overflow:hidden;width:100%;height:220px;">
+                    <a href="https://yandex.ru/maps/10713/yelets/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;left:4px;z-index:10;">Елец</a>
+                    <a href="https://yandex.ru/maps/10713/yelets/house/ulitsa_kommunarov_70b/Z0EYcgFlQUUAQFtofXpzeXpkZg==/?ll=38.465806%2C52.628672&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;left:4px;z-index:10;">Улица Коммунаров, 70Б на карте Ельца — Яндекс Карты</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=38.465806%2C52.628672&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=38.465807%2C52.628672&whatshere%5Bzoom%5D=17&z=17" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;border:none;"></iframe>
+                </div>
+            </div>
+            <p>Рекламное агентство полного цикла: наружная реклама, дизайн, сайты и SEO-продвижение.</p>
+        </div>
+        <div class="footer-col footer-contacts">
+            <h4>Контакты</h4>
+            <p><a href="tel:+79205129999">+7 920 512-99-99</a></p>
+            <p><a href="mailto:info@vikom.ru">info@vikom.ru</a></p>
+            <p>г. Елец, ул. Коммунаров, 70Б</p>
+            <p>Пн–Пт: 9:00–18:00</p>
+        </div>
+        <div class="footer-col footer-legal">
+            <h4>Юридическая информация</h4>
+            <p>ИП Кочерьянц Владимир Суренович</p>
+            <p>ИНН 772576617085</p>
+            <p>ОГРНИП 309482133400019</p>
+            <p>Юр. адрес: г. Елец, ул. Коммунаров, 70Б</p>
+        </div>
+        <div class="footer-col footer-form">
+            <h4>Обратная связь</h4>
+            <form id="feedbackForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Сообщение" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+            </form>
+            <p class="form-success" id="formSuccess" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 ВИКОМ. Все права защищены.</p>
+        <p>Политика конфиденциальности · Публичная оферта</p>
+    </div>
+</footer>
+
+<script src="js/services-data.js"></script>
+<script src="js/portfolio-data.js"></script>
+<script src="js/production-data.js"></script>
+<script src="js/blog-data.js"></script>
+<script src="js/prices-data.js"></script>
+<script src="js/render-helpers.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

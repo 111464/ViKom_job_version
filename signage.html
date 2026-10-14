@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вывески для бизнеса в Ельце — ВИКОМ</title>
+<meta name="description" content="Вывески от агентства ВИКОМ: световые вывески, штендеры и фасадные панели — от разработки макета до монтажа под ключ. Примеры работ.">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="theme-color" content="#2B2B2B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="services">
+
+<!-- ==================== HEADER (шапка прокручивается вместе со страницей) ==================== -->
+<header class="site-header">
+  <div class="header-topbar">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo-badge">
+          <span class="logo-title">
+            <span class="logo-title-main">ВиКом</span>
+            <span class="logo-title-sub">рекламное агентство</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="header-search">
+        <form id="headerSearchForm" role="search">
+          <input type="search" id="headerSearch" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+          <button type="submit" aria-label="Искать">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </form>
+        <div class="search-suggest" id="searchSuggest"></div>
+      </div>
+
+      <div class="header-actions">
+        <a href="tel:+79205129999" class="header-phone">+7 920 512-99-99</a>
+        <a href="#contact-form" class="btn btn-primary header-cta">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<nav class="dropdown-nav" id="dropdownNav">
+    <div class="nav-search">
+        <form id="navSearchForm" role="search">
+            <input type="search" id="navSearchInput" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+            <button type="submit" aria-label="Искать">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+            </button>
+        </form>
+        <div class="search-suggest" id="navSearchSuggest"></div>
+    </div>
+    <a href="index.html" data-page="index">Главная</a>
+  <div class="nav-divider" aria-hidden="true"></div>
+  <a href="signage.html" class="nav-service" data-sub="signage">Вывески</a>
+  <a href="bigprint.html" class="nav-service" data-sub="bigprint">Широкоформатная печать</a>
+  <a href="horeca.html" class="nav-service" data-sub="horeca">Интерьерная печать</a>
+  <a href="outdoor.html" class="nav-service" data-sub="outdoor">Наружная реклама</a>
+  <a href="gifts.html" class="nav-service" data-sub="gifts">Сувениры и мерч в Ельце</a>
+  <a href="interior.html" class="nav-service" data-sub="interior">Интерьер и декор</a>
+  <a href="repair.html" class="nav-service" data-sub="repair">Ремонт рекламы</a>
+  <a href="design.html" class="nav-service" data-sub="design">Дизайн</a>
+  <a href="digital.html" class="nav-service" data-sub="digital">Создание и SEO-оптимизация сайтов</a>
+  <div class="nav-divider" aria-hidden="true"></div>
+    <a href="blog.html" data-page="blog">Блог</a>
+    <a href="portfolio.html" data-page="portfolio">Портфолио</a>
+    <a href="prices.html" data-page="prices">Цены</a>
+    <a href="production.html" data-page="production">Производство</a>
+    <a href="about.html" data-page="about">О нас</a>
+    <div class="nav-bottom">
+
+        <a href="#contact-form" class="nav-feedback">Обратная связь</a>
+
+        <div class="nav-contacts">
+            <a href="tel:+79205129999">+7 920 512-99-99</a><span class="nav-contacts-sep" aria-hidden="true">·</span><a href="mailto:info@vikom.ru">info@vikom.ru</a>
+        </div>
+        <div class="nav-address">г. Елец, ул. Коммунаров, 70Б</div>
+    </div>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ==================== TICKER ==================== -->
+<div class="ticker-strip">
+  <div class="ticker-track">
+    <span>Наружная реклама</span><span>Вывески</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Интерьерная печать</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Создание и SEO-оптимизация сайтов</span>
+    <span>Наружная реклама</span><span>Вывески</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Интерьерная печать</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Создание и SEO-оптимизация сайтов</span>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="page-hero sg-hero">
+  <div class="container sg-hero-grid">
+    <div class="sg-hero-copy">
+      <p class="service-breadcrumb"><a href="index.html">Главная</a> / <a href="services.html">Услуги</a> / Вывески</p>
+      <span class="eyebrow">Наружная реклама</span>
+      <h1>Вывески для бизнеса в Ельце</h1>
+      <p class="sg-lead">Проектируем, производим и устанавливаем вывески для магазинов, офисов, кафе, салонов, медицинских центров и других компаний.</p>
+      <p class="muted">От идеи и визуализации до производства и монтажа.</p>
+      <p class="sg-chip">г. Елец, ул. Коммунаров, 70Б</p>
+      <div class="service-detail-actions">
+        <a href="#calc" class="btn btn-primary">Рассчитать вывеску</a>
+        <a href="portfolio.html" class="btn btn-outline">Посмотреть работы</a>
+      </div>
+      <ul class="sg-bullets">
+        <li>Собственное производство</li><li>Проект под ключ</li><li>Визуализация перед производством</li><li>Монтаж и подключение</li>
+      </ul>
+    </div>
+    <div class="sg-hero-ba sg-ba">
+      <div class="ba-slider" id="baSlider">
+        <div class="ba-slider-inner" id="baSliderInner">
+          <img class="ba-img ba-img-after" src="assets/before-after/after.jpg" alt="После: фасад кафе «Старая Прага» с подсвеченной вывеской в тёмное время суток" fetchpriority="high" decoding="async">
+          <div class="ba-clip" id="baClip">
+            <img class="ba-img ba-img-before" src="assets/before-after/before.jpg" alt="До: тот же фасад без вывески" loading="lazy" decoding="async">
+          </div>
+          <div class="ba-divider" id="baDivider"></div>
+          <span class="ba-label ba-label-before">До</span>
+          <span class="ba-label ba-label-after">После</span>
+          <input type="range" id="baRange" class="ba-range" min="0" max="100" value="50" aria-label="Ползунок сравнения фото до и после" tabindex="0">
+          <div class="ba-handle" id="baHandle" aria-hidden="true">
+            <div class="ba-handle-visual">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 6 9 12 15 18"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== КАКУЮ ВЫВЕСКУ МОЖЕМ СДЕЛАТЬ ==================== -->
+<section class="section">
+  <div class="container">
+    <h2>Какие вывески мы изготавливаем</h2>
+    <p class="muted sg-sub">Подбираем конструкцию под фасад, условия размещения, фирменный стиль и бюджет. Ниже основные варианты, с которыми работаем.</p>
+    <div class="od-cards">
+      <a class="od-card" href="#sg-volume">
+        <div class="od-card-img"><img src="assets/signage/card-volume.jpg" alt="Объёмные буквы с подсветкой" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Объёмные буквы</h3><p>Классика наружной рекламы: чёткий силуэт названия прямо на фасаде. Световой и несветовой варианты.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/signage/card-light.jpg" alt="Световые буквы с лицевой подсветкой" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Световые буквы</h3><p>Название компании читается и вечером, и ночью: яркая LED-подсветка лицом или контуром.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#sg-box">
+        <div class="od-card-img"><img src="assets/signage/card-box.jpg" alt="Световой короб DReMA с подсветкой" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Световые короба</h3><p>Яркое и практичное решение для фасада, входной группы и интерьера в разных форматах.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#sg-nonlit">
+        <div class="od-card-img"><img src="assets/signage/card-nonlit.jpg" alt="Несветовые металлические буквы" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Несветовые вывески</h3><p>Аккуратная конструкция там, где подсветка не нужна: ПВХ, акрил, композит, плёнка.</p><span class="od-card-more">Подробнее →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/signage/card-interior.jpg" alt="Интерьерная вывеска с логотипом" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Интерьерные вывески</h3><p>Фирменный стиль внутри офиса, магазина, кафе или салона: ресепшен, залы, торговые зоны.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+      <a class="od-card" href="#calc">
+        <div class="od-card-img"><img src="assets/signage/card-bracket.jpg" alt="Панель-кронштейн на фасаде" loading="lazy" decoding="async"></div>
+        <div class="od-card-body"><h3>Панель-кронштейны</h3><p>Перпендикулярные вывески, которые видно вдоль улицы и помогают заметить вход.</p><span class="od-card-more">Рассчитать стоимость →</span></div>
+      </a>
+    </div>
+    <div class="sg-center"><a href="portfolio.html" class="btn btn-outline">Смотреть все работы</a></div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== КАЛЬКУЛЯТОР ==================== -->
+<section class="section section-alt sg-calc-section" id="calc">
+  <div class="container">
+    <span class="eyebrow">Калькулятор</span>
+    <h2>Рассчитайте стоимость вывески</h2>
+    <p class="muted sg-sub">Цена букв считается за 1 см высоты каждой буквы по прайсу ВИКОМ. Введите текст и высоту — расчёт обновляется сразу.</p>
+    <div class="sg-calc">
+      <form class="sg-calc-form" id="sgCalcForm" autocomplete="off">
+        <label for="sgType">Тип вывески
+          <select id="sgType"><optgroup label="Объёмные буквы · Белые буквы"><option value="120" selected>Лицевая подсветка — 120 ₽/см</option><option value="140">Контражурная подсветка — 140 ₽/см</option><option value="160">Лицевая + контражурная — 160 ₽/см</option></optgroup><optgroup label="Объёмные буквы · Цветная лицевая часть, белый борт"><option value="150">Лицевая подсветка — 150 ₽/см</option><option value="170">Контражурная подсветка — 170 ₽/см</option><option value="220">Лицевая + контражурная — 220 ₽/см</option></optgroup><optgroup label="Объёмные буквы · Цветная лицевая часть, цветной борт"><option value="160">Лицевая подсветка — 160 ₽/см</option><option value="180">Контражурная подсветка — 180 ₽/см</option><option value="230">Лицевая + контражурная — 230 ₽/см</option></optgroup><optgroup label="Объёмные буквы · Без подсветки"><option value="100">Объёмные буквы без подсветки — 100 ₽/см</option></optgroup><optgroup label="Плоские буквы и плёнка"><option value="50">Плоские буквы из ПВХ 10 мм, белые — 50 ₽/см</option><option value="65">Плоские буквы из ПВХ 10 мм, цветные — 65 ₽/см</option><option value="70">Плоские буквы из акрила 3 мм — 70 ₽/см</option><option value="30">Буквы порезкой из цветной плёнки — 30 ₽/см</option></optgroup></select>
+        </label>
+        <label for="sgText">Текст вывески
+          <input type="text" id="sgText" maxlength="80" placeholder="Например, Старая Прага">
+        </label>
+        <div class="sg-calc-row">
+          <label for="sgHeight">Высота букв, см
+            <input type="number" id="sgHeight" min="5" max="300" step="1" inputmode="numeric" placeholder="Например, 40">
+          </label>
+          <label for="sgFrame">Металлокаркас, п.м. <small>(от 1 000 ₽/п.м.)</small>
+            <input type="number" id="sgFrame" min="0" max="200" step="0.5" inputmode="decimal" placeholder="0">
+          </label>
+        </div>
+        <label class="sg-check"><input type="checkbox" id="sgMount"> Монтаж (от +30%)</label>
+        <label class="sg-check"><input type="checkbox" id="sgFile"> Подготовка файла (от 800 ₽)</label>
+      </form>
+      <div class="sg-calc-result" aria-live="polite">
+        <span class="sg-calc-label">Примерная стоимость</span>
+        <span class="sg-calc-total" id="sgTotal">—</span>
+        <ul class="sg-calc-lines" id="sgLines"><li class="sg-calc-hint">Введите текст и высоту букв</li></ul>
+        <p class="sg-calc-note">Цены по прайсу указаны «от» — расчёт ориентировочный. Буквы ниже 15 см — от +25%. Точную стоимость и макет подготовит менеджер.</p>
+        <a href="#contact-form" class="btn btn-primary">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== ОБЪЁМНЫЕ БУКВЫ ==================== -->
+<section class="section" id="sg-volume">
+  <div class="container sg-split">
+    <div class="sg-collage">
+      <img src="assets/signage/letters-1.jpg" alt="Объёмные буквы на этапе сборки" loading="lazy" decoding="async">
+      <img src="assets/signage/letters-2.jpg" alt="Объёмные буквы «Boom Kids»" loading="lazy" decoding="async">
+      <img src="assets/signage/letters-3.jpg" alt="Объёмные буквы «Мой семейный клуб»" loading="lazy" decoding="async">
+      <img src="assets/signage/letters-4.jpg" alt="Объёмные буквы «Lunch time»" loading="lazy" decoding="async">
+    </div>
+    <div class="sg-text">
+      <span class="eyebrow">Объёмные буквы</span>
+      <h2>Один из самых заметных форматов вывески</h2>
+      <p>Объёмные буквы подходят для фасадов магазинов, офисов, кафе, торговых центров и других объектов. Можно изготовить световой или несветовой вариант, подобрать размер, цвет, материал и способ установки под конкретный фасад.</p>
+      <a href="#calc" class="btn btn-primary">Заказать объёмные буквы</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== СВЕТОВЫЕ КОРОБА ==================== -->
+<section class="section" id="sg-box">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Световые короба</span>
+      <h2>Яркое и практичное решение</h2>
+      <p>Лайтбоксы подходят для фасадов, торговых центров, входных групп и интерьерного размещения. Можно изготовить конструкцию разных форматов и размеров в фирменном стиле компании.</p>
+      <ul class="sg-list"><li>тонкие лайтбоксы</li><li>классические короба</li><li>фигурные формы</li><li>двусторонние конструкции</li><li>интерьерные лайтбоксы</li><li>короба с подсветкой</li></ul>
+      <a href="#contact-form" class="btn btn-primary">Заказать световой короб</a>
+    </div>
+    <div class="sg-photo"><img src="assets/signage/lightbox.jpg" alt="Световой короб CITY DESIGN с подсвеченными буквами" loading="lazy" decoding="async"></div>
+  </div>
+</section>
+
+<!-- ==================== НЕСВЕТОВЫЕ ВЫВЕСКИ ==================== -->
+<section class="section section-alt" id="sg-nonlit">
+  <div class="container sg-split reverse">
+    <div class="sg-photo"><img src="assets/signage/nonlit.jpg" alt="Несветовая вывеска из плоских букв на фасаде" loading="lazy" decoding="async"></div>
+    <div class="sg-text">
+      <span class="eyebrow">Несветовые вывески</span>
+      <h2>Когда подсветка не нужна</h2>
+      <p>Для некоторых объектов достаточно аккуратной несветовой конструкции: плоские буквы из ПВХ и акрила, композитные панели, аппликация из плёнки.</p>
+      <ul class="sg-list"><li>объёмные несветовые буквы</li><li>плоские буквы и панели</li><li>композитные конструкции</li><li>акриловые панели</li><li>буквы из плёнки</li></ul>
+      <a href="#calc" class="btn btn-primary">Заказать несветовую вывеску</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ВЫВЕСКА НА ФАСАД + ВИЗУАЛИЗАЦИЯ ==================== -->
+<section class="section">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Вывеска на фасад</span>
+      <h2>Подбираем решение именно под ваше здание</h2>
+      <p>Вывеска должна хорошо смотреться не отдельно, а на конкретном фасаде. Учитываем архитектуру здания, размеры зоны размещения, фирменный стиль и расстояние, с которого вывеску будут видеть.</p>
+      <a href="#contact-form" class="btn btn-primary">Заказать вывеску на фасад</a>
+    </div>
+    <div class="sg-photo"><img src="assets/signage/facade.jpg" alt="Вывеска на фасаде логистического центра" loading="lazy" decoding="async"><span class="sg-photo-tag">Фасад · Интеграция вывески</span></div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <span class="eyebrow">Визуализация</span>
+    <h2>Сначала увидите, как она будет выглядеть</h2>
+    <p class="muted sg-sub">Показываем визуализацию будущей вывески на вашем фасаде до начала производства — можно заранее оценить размер, расположение, цвет и читаемость.</p>
+    <div class="sg-center"><a href="#contact-form" class="btn btn-primary">Заказать визуализацию</a></div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ==================== ДИЗАЙН ВЫВЕСКИ ==================== -->
+<section class="section section-alt">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Дизайн вывески</span>
+      <h2>Вывеска должна быть частью бренда</h2>
+      <p>Используем логотип, фирменные цвета и стиль компании. Если готового макета нет, разработаем дизайн вывески. При необходимости также поможем с логотипом и фирменным стилем.</p>
+      <a href="design.html" class="btn btn-primary">Заказать дизайн вывески</a>
+    </div>
+    <div class="sg-photo"><img src="assets/signage/design.jpg" alt="Световая вывеска с фирменным логотипом" loading="lazy" decoding="async"></div>
+  </div>
+</section>
+
+<!-- ==================== МОНТАЖ + РЕМОНТ ==================== -->
+<section class="section section-alt">
+  <div class="container sg-split">
+    <div class="sg-text">
+      <span class="eyebrow">Монтаж</span>
+      <h2>Изготовим и установим</h2>
+      <p>После производства выполняем монтаж вывески на объекте с учётом особенностей фасада, размеров конструкции и места установки.</p>
+      <ul class="sg-list"><li>учёт высоты и крепления</li><li>подключение подсветки</li><li>проверка безопасности конструкции</li><li>демонтаж старых вывесок</li></ul>
+    </div>
+    <div class="sg-photo"><img src="assets/signage/montage.jpg" alt="Монтаж вывески на фасаде с автовышки" loading="lazy" decoding="async"></div>
+  </div>
+  <div class="container">
+    <div class="sg-repair">
+      <div>
+        <span class="eyebrow">Ремонт и обслуживание</span>
+        <h3>Вывеска уже есть, но требует ремонта?</h3>
+        <p>Можно обратиться за диагностикой и ремонтом установленной конструкции: заменить элементы, подсветку, графику или повреждённые части.</p>
+      </div>
+      <a href="repair.html" class="btn btn-primary">Заказать ремонт вывески</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ==================== ЦЕНЫ ==================== -->
+<section class="section section-alt" id="prices">
+  <div class="container">
+    <h2>Цены</h2>
+    <div class="price-tables" data-price-service="signage"></div>
+  </div>
+</section>
+
+<!-- ==================== ПОСЛЕДНИЙ ТЕКСТОВЫЙ БЛОК ==================== -->
+<section class="section">
+  <div class="container sg-seo">
+    <h2>Изготовление вывесок в Ельце</h2>
+    <p>ВИКОМ занимается изготовлением вывесок для бизнеса: объёмные буквы, световые вывески, световые короба, несветовые и интерьерные вывески и другие рекламные конструкции.</p>
+    <p>Можем выполнить проект под ключ: разработать дизайн, показать будущую вывеску перед производством, изготовить конструкцию и выполнить монтаж. Также выполняем ремонт и обслуживание существующих рекламных конструкций.</p>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="section section-alt">
+  <div class="container">
+    <h2>Частые вопросы</h2>
+    <p class="muted sg-sub">Ответы на вопросы, которые чаще всего задают по изготовлению вывесок.</p>
+    <div class="sg-faq">
+      <details class="sg-faq-item"><summary>Сколько стоит изготовление вывески?</summary><p>Стоимость зависит от формата, размеров, материалов, подсветки и сложности монтажа. Предварительную цену можно посчитать в калькуляторе выше, а точную — менеджер подготовит по вашему объекту.</p></details>
+      <details class="sg-faq-item"><summary>От чего зависит цена?</summary><p>От типа вывески (объёмные буквы, лайтбокс, плоские буквы и т. д.), высоты и количества букв, материалов, наличия подсветки, сложности монтажа и особенностей фасада.</p></details>
+      <details class="sg-faq-item"><summary>Какая вывеска лучше — световая или несветовая?</summary><p>Зависит от задачи, времени работы объекта, фасада и бюджета. Световая заметнее вечером и ночью, несветовая — лаконичнее и обычно дешевле.</p></details>
+      <details class="sg-faq-item"><summary>Можно сделать вывеску по нашему логотипу?</summary><p>Да. Используем ваш логотип, фирменные цвета и стиль. При необходимости адаптируем логотип под формат вывески.</p></details>
+      <details class="sg-faq-item"><summary>Вы делаете дизайн вывески?</summary><p>Да. Если готового макета нет, разработаем дизайн вывески под задачу, фасад и фирменный стиль.</p></details>
+      <details class="sg-faq-item"><summary>Можно увидеть вывеску до изготовления?</summary><p>Да. Присылаем визуализацию по вашему проекту перед производством, чтобы оценить размер, расположение и общий вид.</p></details>
+      <details class="sg-faq-item"><summary>Вы выполняете монтаж?</summary><p>Да. Устанавливаем и подключаем готовые вывески на объекте с учётом особенностей фасада и конструкции.</p></details>
+      <details class="sg-faq-item"><summary>Можно отремонтировать старую вывеску?</summary><p>Да. Можно обратиться за диагностикой и ремонтом уже установленной конструкции — подробности на странице «Ремонт рекламы».</p></details>
+      <details class="sg-faq-item"><summary>Вывеска должна соответствовать требованиям?</summary><p>С 1 марта 2026 года вступают в силу новые требования к оформлению вывесок и наружной информации. Мы помогаем привести вывески в соответствие требованиям.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="sg-cta">
+      <div>
+        <h2>Нужна вывеска?</h2>
+        <p>Расскажите о задаче и назовите адрес объекта. Предложим подходящий вариант и рассчитаем стоимость.</p>
+      </div>
+      <div class="sg-cta-actions">
+        <a href="#contact-form" class="btn btn-primary">Связаться с менеджером</a>
+        <a href="tel:+79205129999" class="sg-cta-phone">+7 920 512-99-99</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER / ANDERGROUND ==================== -->
+<footer class="site-footer" id="contact-form">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="footer-map">
+                <div style="position:relative;overflow:hidden;width:100%;height:220px;">
+                    <a href="https://yandex.ru/maps/10713/yelets/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;left:4px;z-index:10;">Елец</a>
+                    <a href="https://yandex.ru/maps/10713/yelets/house/ulitsa_kommunarov_70b/Z0EYcgFlQUUAQFtofXpzeXpkZg==/?ll=38.465806%2C52.628672&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;left:4px;z-index:10;">Улица Коммунаров, 70Б на карте Ельца — Яндекс Карты</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=38.465806%2C52.628672&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=38.465807%2C52.628672&whatshere%5Bzoom%5D=17&z=17" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;border:none;"></iframe>
+                </div>
+            </div>
+            <p>Рекламное агентство полного цикла: наружная реклама, дизайн, сайты и SEO-продвижение.</p>
+        </div>
+        <div class="footer-col footer-contacts">
+            <h4>Контакты</h4>
+            <p><a href="tel:+79205129999">+7 920 512-99-99</a></p>
+            <p><a href="mailto:info@vikom.ru">info@vikom.ru</a></p>
+            <p>г. Елец, ул. Коммунаров, 70Б</p>
+            <p>Пн–Пт: 9:00–18:00</p>
+        </div>
+        <div class="footer-col footer-legal">
+            <h4>Юридическая информация</h4>
+            <p>ИП Кочерьянц Владимир Суренович</p>
+            <p>ИНН 772576617085</p>
+            <p>ОГРНИП 309482133400019</p>
+            <p>Юр. адрес: г. Елец, ул. Коммунаров, 70Б</p>
+        </div>
+        <div class="footer-col footer-form">
+            <h4>Обратная связь</h4>
+            <form id="feedbackForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Сообщение" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+            </form>
+            <p class="form-success" id="formSuccess" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 ВИКОМ. Все права защищены.</p>
+        <p>Политика конфиденциальности · Публичная оферта</p>
+    </div>
+</footer>
+
+<script src="js/services-data.js"></script>
+<script src="js/portfolio-data.js"></script>
+<script src="js/production-data.js"></script>
+<script src="js/blog-data.js"></script>
+<script src="js/prices-data.js"></script>
+<script src="js/render-helpers.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+<script src="js/signage.js"></script>
+</body>
+</html>
