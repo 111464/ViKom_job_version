@@ -437,12 +437,13 @@
     </div>
     <div class="footer-col footer-form">
       <h4>Обратная связь</h4>
-      <form id="feedbackForm">
-        <input type="text" placeholder="Ваше имя" required>
-        <input type="tel" placeholder="Телефон" required>
-        <textarea placeholder="Сообщение" rows="3"></textarea>
-        <button type="submit" class="btn btn-primary btn-block">Отправить</button>
-      </form>
+<form id="feedbackForm">
+  <input type="text" name="name" placeholder="Ваше имя" required>
+  <input type="tel" name="phone" placeholder="Телефон" required>
+  <textarea name="message" placeholder="Сообщение" rows="3"></textarea>
+  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+  <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+</form>
       <p class="form-success" id="formSuccess" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
     </div>
   </div>
