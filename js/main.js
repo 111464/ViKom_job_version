@@ -68,11 +68,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const feedbackForm = document.getElementById("feedbackForm");
   const formSuccess = document.getElementById("formSuccess");
   if (feedbackForm) {
-    feedbackForm.addEventListener("submit", (e) => {
+    const submitBtn = feedbackForm.querySelector('button[type="submit"]');
+    feedbackForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      feedbackForm.reset();
-      feedbackForm.classList.add("hidden");
-      if (formSuccess) formSuccess.hidden = false;
+      if (feedbackForm.botcheck && feedbackForm.botcheck.checked) return; // защита от спама
+
+      const formData = new FormData(feedbackForm);
+      formData.append("access_key", "b7b55705-80fd-4437-8ed7-02ea2b1bedbe");
+      formData.append("subject", "Заявка с сайта vikom-reklama.ru");
+      formData.append("from_name", "Сайт ВИКОМ");
+      formData.append("page", location.href);
+
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = "Отправляем...";
+      submitBtn.disabled = true;
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", { method: "POST", body: formData });
+        const data = await response.json();
+        if (response.ok && data.success !== false) {
+          feedbackForm.reset();
+          feedbackForm.classList.add("hidden");
+          if (formSuccess) formSuccess.hidden = false;
+        } else {
+          alert("Не удалось отправить: " + (data.message || "ошибка") + ". Позвоните нам: +7 920 512-99-99");
+        }
+      } catch (err) {
+        alert("Что-то пошло не так. Попробуйте ещё раз или позвоните: +7 920 512-99-99");
+      } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
     });
   }
 
